@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<form xmlns="http://www.demandware.com/xml/form/2008-04-19">
+    <field formid="fname" label="forms.contactus.firstname.label" type="string" mandatory="true" max-length="50"/>
+    <field formid="lname" label="forms.contactus.lastname.label" type="string" mandatory="true" max-length="50"/>
+    
+    <field formid="gender" label="forms.contactus.gender.label" type="string" mandatory="true">
+    	<options>
+			<option optionid="" label="resource.select"	value=""/>
+			<option optionid="Male"	label="gender.male"	value="Male"/>
+			<option optionid="Female" label="gender.female" value="Female"/>
+		</options>	
+    </field>
+    
+    <field formid="birthday" label="profile.dob"  description="profile.dobexample" type="date" mandatory="false" format="MM/dd/yyyy" max-length="10"/>
+    
+    <field formid="website" label="forms.contactus.website.label" type="string" mandatory="false" max-length="35"/>
+	
+	<field formid="email" label="forms.contactus.email.label" type="string" mandatory="true" 
+    	regexp="^[\w-\.]{1,}\@([\da-zA-Z-]{1,}\.){1,}[\da-zA-Z-]{2,6}$" 
+    	parse-error="forms.contactus.email.parse-error" 
+    	value-error="forms.contactus.email.value-error" 
+    	max-length="50"/>
+    	
+    <field formid="checkbox" label="forms.contactus.checkox.label" type="string" mandatory="false" />
+    
+    <field formid="comments" label="forms.contactus.comment.label" type="string" mandatory="false" />
+	<action formid="success" valid-form="true"/>
+</form>
