@@ -1,0 +1,83 @@
+* {
+  padding: 0%;
+  margin: 0%; }
+
+body {
+  height: 100%;
+  width: 100%; }
+
+header {
+  background-color: gold;
+  height: 11%; }
+  header .header-top {
+    margin: 0% 12.5%;
+    height: 36%;
+    padding-top: .8%; }
+    header .header-top .div2 {
+      width: 10%;
+      height: 100%;
+      float: left;
+      background: grey; }
+    header .header-top .div3 {
+      width: 17.5%;
+      height: 100%;
+      float: right;
+      background: grey; }
+  header .div4 {
+    width: 75%;
+    height: 36%;
+    float: left;
+    margin: 0 0 0 12.5%;
+    margin-top: .7%;
+    background: grey; }
+
+section {
+  background-color: white;
+  height: 82%;
+  width: 100%; }
+  section .div5, section .div8 {
+    background-color: gold;
+    margin-top: .9%;
+    height: 34.1%;
+    width: 100%; }
+    section .div5 .span1, section .div8 .span1 {
+      background-color: grey;
+      margin: 1.1% 12.5%;
+      height: 85.71%;
+      width: 75%;
+      float: left; }
+  section .div6 {
+    background-color: white;
+    margin-top: .9%;
+    height: 29.26%;
+    width: 100%; }
+    section .div6 .div7 {
+      margin-left: 12.5%;
+      height: 100%;
+      margin-bottom: .9%; }
+      section .div6 .div7 .span2 {
+        background-color: grey;
+        margin-right: .9%;
+        height: 100%;
+        width: 20.75%;
+        float: left; }
+  section .div8 {
+    background-color: white;
+    height: 32%; }
+    section .div8 .span1 {
+      background-color: grey;
+      height: 100%;
+      margin-top: 0; }
+
+footer {
+  height: 4%;
+  background-color: gold;
+  margin-top: 1%; }
+  footer .footer1 {
+    margin-left: 12.5%;
+    width: 75%;
+    background-color: grey;
+    height: 100%;
+    display: block; }
+
+/*# sourceMappingURL=home.css.map */

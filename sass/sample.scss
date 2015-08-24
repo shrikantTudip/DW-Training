@@ -1,0 +1,343 @@
+$grey: blue;
+*{
+	padding:0%;
+	margin:0%;
+}
+body{
+		//height:100%;
+		//width:100%;
+	}
+	header {
+			background-color:gold;
+			height:12%;
+			//padding-top:1.9%;
+			
+			.header-top{
+							margin: 0% 12.5%;
+							height: 36.5%;
+							padding-top:0.8%;
+						
+							.div2{
+									width: 10%;
+									height: 100%;
+									float: left;
+									background: $grey;
+								}
+								.div3{
+										width: 18%;
+										height: 100%;
+										float: right;
+										background: $grey;
+									}
+						}
+			
+						.div4{
+								width: 75%;
+								height: 36.5%;
+								float: left;
+								margin: 0 0 0 12.5%;
+								margin-top: 0.8%;
+								background: $grey;
+								position:relative;
+							}
+			
+			
+		
+			}	
+		
+section{
+			height:81%;
+			width:75%;
+			margin-left:12.5%;
+			background-color:white;
+			.div5{
+					width: 100%;
+					height: 3.66%;
+					float: left;
+					//margin-top: 1.68%;
+					//margin-left: 12.%;
+					margin-bottom:.8%;
+					background: $grey;
+				}
+				.main{
+						width:100%;
+						height:100%;
+						margin-top:.8%;
+						background:white;
+						.span1{
+								width: 18%;
+								height: 94.6%;
+								float: left;
+								//	margin-top: 1.68%;
+								//margin-left: 12.%;
+								margin-bottom:0%;
+								background: #C8C8C8 ;
+								}
+								.span2{
+										width: 19%;
+										height: 30.5%;
+										float: left;
+										margin-top: 0%;
+										margin-left: 1.5%;
+										margin-bottom:.7%;
+										background: $grey;
+										}
+
+					}
+		}	
+		footer {
+										//width:100%;
+					height:4%;
+					background-color:gold;
+					margin-top:0.9%;
+					//margin-left:12.5%;
+
+				.footer1{
+					margin-left:12.5%;
+					width:75%;
+					background-color:grey;
+					height:100%;
+					//float:left;
+					display:block;
+
+					}
+				}
+		
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+$grey: grey;
+/*	*{
+	padding:0%;
+	margin:0%;
+}
+body{
+		height:100%;
+		width:100%;
+	}
+*/	header {
+			background-color:gold;
+			height:12%;
+			
+			.header-top{
+							margin: 0% 20%;
+							height: 33%;
+						//	padding-top: 1.3%;
+
+							.div2{
+									width: 10%;
+									height: 100%;
+									float: left;
+									
+									background: $grey;
+								}
+								.div3{
+										width: 30%;
+										height: 100%;
+									//	margin-top: 2%;
+										float: right;
+										background: $grey;
+									}
+						}
+			
+						.div4{
+								width: 60%;
+								height: 33%;
+								float: left;
+								margin-top: 2%;
+								margin-left: 20%;
+								margin-bottom:0%;
+								background: $grey;
+							}
+			
+			
+		
+			}	
+		
+section{
+			height:83%;
+			width:60%;
+			margin-left:20%;
+			background-color:white;
+			overflow:hidden;
+			.div5{
+					width: 100%;
+					height: 3%;
+					float: left;
+					margin-top: 1.68%;
+					//margin-left: 12.%;
+					margin-bottom:1.5%;
+					background: $grey;
+				}
+				.main{
+						width:100%;
+						height:100%;
+						margin-top:1.5%;
+						background:white;
+
+						.span1{
+								width: 18%;
+								height: 94.5%;
+								float: left;
+								//	margin-top: 1.68%;
+								//margin-left: 12.%;
+								margin-bottom:0%;
+								background: #C8C8C8 ;
+								}
+								.span2{
+										width: 25.8%;
+										height: 31.1%;
+										float: left;
+										margin-top: 0%;
+										margin-left: 1.5%;
+										margin-bottom:1.5%;
+										background: $grey;
+										overflow:hidden;
+										}
+
+					}
+		}	
+		footer {
+										//width:100%;
+					height:4%;
+					background-color:gold;
+					margin-top:.9%;
+					margin-left:0%;
+
+				.footer1{
+					margin-left:20%;
+					width:60%;
+					background-color:grey;
+					height:100%;
+					//float:left;
+					display:block;
+
+				}
+		
+
+   }
+
+
+
+
+}
+@media only screen and (min-width: 480px) and (max-width: 768px){
+$grey: grey;
+/*	*{
+	padding:0%;
+	margin:0%;
+}
+body{
+		height:100%;
+		width:100%;
+	}
+*/	header {
+			background-color:gold;
+			height:12%;
+			
+			.header-top{
+							margin: 0% 0%;
+							height: 33%;
+						//	padding-top:2%;
+
+							.div2{
+									width: 20%;
+									height: 100%;
+									float: left;
+									margin-top: 2%;
+									background: $grey;
+								}
+								.div3{
+										width: 37%;
+										height: 100%;
+										margin-top: 2%;
+										float: right;
+										background: $grey;
+									}
+						}
+			
+						.div4{
+								width: 100%;
+								height: 33%;
+								float: left;
+								margin-top: 2%;
+								margin-left: 0%;
+								margin-bottom:0%;
+								background: $grey;
+								padding-bottom:0;
+							}
+			
+			
+		
+			}	
+		
+section{
+			height:83.4%;
+			width:100%;
+			margin-left:0;
+			background-color:white;
+			overflow:hidden;
+			.div5{
+					width: 100%;
+					height: 2.8%;
+				//	float: left;
+					margin-top: 1.13%;
+					//margin-left: 12.%;
+				//	margin-bottom:0%;
+					background: $grey;
+				}
+				.main{
+						width:100%;
+						height:100%;
+						margin-top:1.5%;
+						background:white;
+
+						.span1{
+								width:100%;
+								height:21%;
+								float: left;
+								//	margin-top: 1.68%;
+								//margin-left: 12.%;
+								margin-bottom:1.5%;
+								background: #C8C8C8 ;
+								}
+								.span2{
+									width: 49.2%;
+									height: 38%;
+									float: left;
+									margin-top: 0%;
+									//margin-left: 1.13%;
+									margin-bottom:1.5%;
+									background: $grey;
+									overflow:hidden;
+									&:nth-child(2), &:nth-child(4) {
+										margin-left: 0;
+									}
+								}
+
+					}
+		}	
+		footer {
+										//width:100%;
+					height:3.8%;
+					background-color:$grey;
+					margin-top:1.15%;
+					//padding-bottom:1%;
+
+				.footer1{
+					margin-left:20%;
+					width:60%;
+					background-color:$grey;
+					height:100%;
+					//float:left;
+					display:block;
+
+				}
+		
+
+   }
+
+
+
+
+}
