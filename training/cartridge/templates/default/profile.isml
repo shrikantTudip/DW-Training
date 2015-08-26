@@ -1,0 +1,101 @@
+<!--- TEMPLATENAME: profile.isml --->
+<isdecorate template="content/home/pt_storefront">
+<isinclude template="util/modules">
+	<header class="form_header">
+		<h3 class="form_heading">${Resource.msg('forms.profile.personal', 'forms', null)}</h3>
+		<h3 class="form_heading_right">${Resource.msg('forms.profile.right', 'forms', null)}</h3>
+	</header>
+	<form action="${URLUtils.httpContinue()}" method="post" id="${pdict.CurrentForms.profileform.htmlName}">
+		<fieldset>
+		    <div class="formfield">
+		    	<isinputfield formfield="${pdict.CurrentForms.profileform.fname}" type="input"/>
+		    </div>
+		    <div class="formfield">
+		        <isinputfield formfield="${pdict.CurrentForms.profileform.lname}" type="input" />
+		    </div>
+		    <div class="formfield">
+		    	<isinputfield formfield="${pdict.CurrentForms.profileform.gender}" type="select" rowclass="form_profile_select"/>
+		    </div>
+		    <div class="formfield" >
+		    	<isinputfield formfield="${pdict.CurrentForms.profileform.birthday}" type="date" rowclass="form_profile_birth"/>
+		    </div>
+		    <div class="formfield">
+		    	<isinputfield formfield="${pdict.CurrentForms.profileform.website}" type="input"/>
+		    </div>
+		    <div class="formfield">
+		        <isinputfield formfield="${pdict.CurrentForms.profileform.email}" type="input" rowclass="form_profile_email"/>
+		        <input type="checkbox" class="form_checkbox_profile">${Resource.msg('forms.contactus.checkox.label', 'forms', null)}
+		    </div>
+
+		    <div class="formfield">
+		    	<isinputfield attribute1="rows" value1="8" attribute2="cols" value2="40" formfield="${pdict.CurrentForms.profileform.comments}" type="textarea"/>
+		        <div class="clear"><!-- FLOAT CLEAR --></div>
+		    </div>
+		    
+		    <div class="formactions">
+			<input type="submit" value="${Resource.msg('forms.submit','forms',null)}" 
+			    name="${pdict.CurrentForms.profileform.success.htmlName}"/>
+			</div>
+		</fieldset>
+	</form>
+	
+	<header class="form_header">
+		<h3 class="form_heading">${Resource.msg('forms.profile.address', 'forms', null)}</h3>
+		<h3 class="form_heading_right">${Resource.msg('forms.profile.right', 'forms', null)}</h3>
+	</header>
+	<form action="${URLUtils.httpContinue()}" method="post" id="${pdict.CurrentForms.profileform.htmlName}">
+		<fieldset>
+		    <div class="formfield">
+		    	<isinputfield formfield="${pdict.CurrentForms.profileform.address}" type="input"/>
+		    </div>
+		    <div class="formfield">
+		        <isinputfield formfield="${pdict.CurrentForms.profileform.address1}" type="input"/>
+		    </div>
+		    <div class="formfield">
+		    	<isinputfield formfield="${pdict.CurrentForms.profileform.country}" type="select" rowclass="form_profile_select"/>
+		    </div>
+		    <div class="formfield">
+		    	<isinputfield formfield="${pdict.CurrentForms.profileform.state}" type="select" rowclass="form_profile_select"/>
+		    </div>
+		    <div class="formfield">
+		    	<isinputfield formfield="${pdict.CurrentForms.profileform.city}" type="input"/>
+		    </div>
+		    <div class="formfield">
+		    	<isinputfield formfield="${pdict.CurrentForms.profileform.zipcode}" type="input"/>
+		    </div>
+		    <div class="formfield">
+		    	<isinputfield formfield="${pdict.CurrentForms.profileform.phone}" type="input" rowclass="form_profile_phone"/>
+		    </div>
+		</fieldset>
+	</form>
+	
+	<header class="form_header">
+		<h3 class="form_heading">${Resource.msg('forms.profile.payment', 'forms', null)}</h3>
+		<h3 class="form_heading_right">${Resource.msg('forms.profile.right', 'forms', null)}</h3>
+	</header>
+	<form action="${URLUtils.httpContinue()}" method="post" id="${pdict.CurrentForms.profileform.htmlName}">
+		<fieldset>
+			<div class="formfield">
+		    	<isinputfield formfield="${pdict.CurrentForms.profileform.card}" type="input"/>
+		    </div>
+		    <div class="formfield">
+		        <isinputfield formfield="${pdict.CurrentForms.profileform.type}" type="select" rowclass="form_profile_select"/>
+		    </div>
+		    <div class="formfield">
+		    	<isinputfield formfield="${pdict.CurrentForms.profileform.number}" type="input"/>
+		    </div>
+		    <div class="formfield">
+		    	<isinputfield formfield="${pdict.CurrentForms.profileform.state}" type="select" rowclass="form_profile_select"/>
+		    </div>
+		    <div class="formfield">
+		    	<isinputfield formfield="${pdict.CurrentForms.profileform.city}" type="input"/>
+		    </div>
+		    <div class="formfield">
+		    	<isinputfield formfield="${pdict.CurrentForms.profileform.zipcode}" type="input"/>
+		    </div>
+		</fieldset>
+	</form>
+	
+	
+
+</isdecorate>
