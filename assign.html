@@ -1,0 +1,85 @@
+<html>
+<head>
+	<title>Time difference</title>
+</head>
+<body>
+<div>
+	<div>
+		<label>Time Slot 1 : </label>
+		<input type="time" id="ts1"> 
+		<input type="time" id="ts2">
+	</div>
+	<div>
+		<label>Time Slot 2 : </label>
+		<input type="time" id="ts3"> 
+		<input type="time" id="ts4">
+	</div>
+	<button type="button" onclick="myFunction()">Submit</button>
+</div>
+<p id="p01"></p>
+<p id="p02"></p>
+		
+<script>
+function myFunction() {
+	var t1 = document.getElementById("ts1").value;
+	var ct1 = convertTime24to12(t1);
+	var t2 = document.getElementById("ts2").value;
+	var ct2 = convertTime24to12(t2);
+	var t3 = document.getElementById("ts3").value;
+	var ct3 = convertTime24to12(t3);
+	var t4 = document.getElementById("ts4").value;
+	var ct4 = convertTime24to12(t4);
+
+	function convertTime24to12(time24){
+	var tmpArr = time24.split(':'), time12;
+	if(+tmpArr[0] == 12) {
+	time12 = tmpArr[0] + ':' + tmpArr[1] + ' pm';
+	} else {
+	if(+tmpArr[0] == 00) {
+	time12 = '12:' + tmpArr[1] + ' am';
+	} else {
+	if(+tmpArr[0] > 12) {
+	time12 = (+tmpArr[0]-12) + ':' + tmpArr[1] + ' pm';
+	} else {
+	time12 = (+tmpArr[0]) + ':' + tmpArr[1] + ' am';
+	}
+	}
+	}
+	return time12;
+	}
+
+    if(t2>t1&&t2<t4&&t3>t1&&t3<t4)
+    {  
+		if(t2==t3||t2>t3) {
+			var app = ct1.concat(" to ",ct4);
+			var node = document.createElement("LI");
+		    var textnode = document.createTextNode(app);
+	   		node.appendChild(textnode);
+	    	document.getElementById("p01").appendChild(node);
+		}
+		else {
+			var app = ct1.concat(" to ",ct2);
+			var node = document.createElement("LI");
+			var textnode = document.createTextNode(app);
+		   	node.appendChild(textnode);
+	    	document.getElementById("p01").appendChild(node);
+		}
+	}
+	else {
+		alert("Wrong Input");
+	}
+	if(t1<t2&&t3<t4){
+		var app = ct1.concat(" to ",ct2)
+		var node = document.createElement("LI");
+		var textnode = document.createTextNode(app);
+	   	node.appendChild(textnode);
+    	document.getElementById("p01").appendChild(node);
+	}
+	else{
+		alert("Wrong Input");
+	}
+}
+</script>
+
+</body>
+</html>
