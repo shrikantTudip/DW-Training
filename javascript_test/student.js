@@ -9,16 +9,19 @@ xhr.onload = function() {
     	newContent += '<th>' + 'Lastname' + '</th>';
     	newContent += '<th>' + 'RollNo' + '</th>';
     	newContent += '<th>' + 'Subject' + '</th></tr>';
- 	for (i = 0; i < responseObject.subarr.length; i++) {       
-	      newContent += '<tr id='+i+'><td>' + responseObject.subarr[i].firstname + '</td>';
-	      newContent += '<td>' + responseObject.subarr[i].lastname 	+ '</td>';
-	      newContent += '<td>' + responseObject.subarr[i].rollno 	+ '</td>';
-	      newContent += '<td>' + responseObject.subarr[i].subject 	+ '</td>';
-	      newContent += '<td><button type="button" onclick="editform('+i+');">' + 'Edit' + '</button></td>';
-	      newContent += '<td><button type="button" onclick="removefunction('+i+');">' + 'Remove' + '</button></tr>';      
-   	}
-    newContent += '</table>';
-    document.getElementById('content').innerHTML = newContent;  
+ 	for (i = 0; i < responseObject.subarr.length; i++) { 
+      
+      newContent += '<tr id='+i+'><td>' + responseObject.subarr[i].firstname + '</td>';
+      newContent += '<td>' + responseObject.subarr[i].lastname 	+ '</td>';
+      newContent += '<td>' + responseObject.subarr[i].rollno 	+ '</td>';
+      newContent += '<td>' + responseObject.subarr[i].subject 	+ '</td>';
+      newContent += '<td><button type="button" onclick="editform('+i+');">' + 'Edit' + '</button></td>';
+      newContent += '<td><button type="button" onclick="removefunction('+i+');">' + 'Remove' + '</button></tr>';      
+    }
+    
+      newContent += '</table>';
+    document.getElementById('content').innerHTML = newContent;
+
 };
 
 xhr.open('GET', 'student.json', true);
@@ -79,7 +82,6 @@ function editform(a){
 	var ed=document.getElementById('editin');
 	ed.addEventListener('click', function(){editfunction(b);},false);
 }
-
 
 function editfunction(b){
 
