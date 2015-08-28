@@ -1,0 +1,164 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>First clock: :<input type="time" id="clock1"> 
+					<input type="time" id="clock2">
+				<br><br>
+	
+	 2nd clock : <input type="time" id="clock3"> 
+		     	 <input type="time" id="clock4">
+					 
+			
+	<button type="button" onclick="myFunction()">Submit</button> <br><br>
+		<b id="pid01"></b><b id="pi01"></b>  <b id="p01"></b>  <br>
+		<b id="pid02"></b>  <b id="pi02"></b>  <b id="p02"></b><br>  
+		<b id="pid03"></b>  <b id="pi03"></b>  <b id="p03"></b> <br> 
+		<b id="pid04"></b>  <b id="pi04"></b>  <b id="p04"></b> <br> 
+		
+	
+		
+		
+		
+	
+	<p id="demo">
+
+
+<script>
+function myFunction()
+ {
+var hr1,hr2,hr3,hr4;
+var ampm1,ampm2,ampm3,ampm4;
+var min1,min2,min3,min4;
+var i=0;
+
+	var t1 = document.getElementById("clock1").value;
+	min1 =  t1.slice(3,5);
+	hr1=t1.slice(0,2);
+		if(hr1>12)
+		{    hr1=hr1-12;
+			 ampm1="pm";
+		}
+		else
+			ampm1="am";
+	
+
+var t2 = document.getElementById("clock2").value;
+
+	
+	min2 =  t2.slice(3,5);
+	hr2=t2.slice(0,2);
+		if(hr2>12)
+		{    hr2=hr2-12;
+			 ampm2="pm";
+		}
+		else
+			ampm2="am";
+		
+	//var t3 = document.getElementById("clock3").value;
+	var t3 = document.getElementById("clock3").value;
+
+	min3 =  t3.slice(3,5);
+	hr3=t3.slice(0,2);
+		if(hr3>12)
+		{    hr3=hr3-12;
+			 ampm3="pm";
+		}
+		else
+			ampm3="am";
+			
+	
+	
+	//var t4 = document.getElementById("clock4").value;
+	
+		var t4 = document.getElementById("clock4").value;
+
+	
+	min4 =  t4.slice(3,5);
+	hr4=t4.slice(0,2);
+		if(hr4>12)
+		{    hr4=hr4-12;
+			 ampm4="pm";
+		}
+		else
+			ampm4="am";
+	
+
+	
+
+	
+		//	document.getElementById("pid01").innerHTML = t1;
+			
+			
+			//document.getElementById("pid02").innerHTML = t2;
+			//document.getElementById("pid03").innerHTML = t3;
+			//document.getElementById("pid04").innerHTML =t4;
+
+			
+		/*document.getElementById("pid01").innerHTML =  hr1+":";
+		document.getElementById("pi01").innerHTML =  min1+":";
+		document.getElementById("p01").innerHTML =  ampm1;
+		
+		document.getElementById("pid02").innerHTML =  hr2+":";
+		document.getElementById("pi02").innerHTML =  min2+":";
+		document.getElementById("p02").innerHTML =  ampm2;
+		
+		document.getElementById("pid03").innerHTML =  hr3+":";
+		document.getElementById("pi03").innerHTML =  min3+":";
+		document.getElementById("p03").innerHTML =  ampm3;
+
+		document.getElementById("pid04").innerHTML =  hr4+":";
+		document.getElementById("pi04").innerHTML =  min4+":";
+		document.getElementById("p04").innerHTML =  ampm4;
+		*/
+	if((t3==null) || (t4==null) )
+	{
+        document.getElementById("pid01").innerHTML =  hr1+":";
+		document.getElementById("pi01").innerHTML =  min1+":";
+		document.getElementById("p01").innerHTML =  ampm1;
+		
+		document.getElementById("pid02").innerHTML =  hr2+":";
+		document.getElementById("pi02").innerHTML =  min2+":";
+		document.getElementById("p02").innerHTML =  ampm2;
+			}
+else{
+	if((hr2 >= hr3) && (ampm2==ampm3) && (min2 >= min3))
+	{
+		document.getElementById("pid01").innerHTML =  hr1+":";
+		document.getElementById("pi01").innerHTML =  min1+":";
+		document.getElementById("p01").innerHTML =  ampm1;
+		
+        document.getElementById("pid04").innerHTML =  hr4+":";
+		document.getElementById("pi04").innerHTML =  min4+":";
+		document.getElementById("p04").innerHTML =  ampm4;
+	}
+	else {
+			document.getElementById("pid01").innerHTML =  hr1+":";
+		document.getElementById("pi01").innerHTML =  min1+":";
+		document.getElementById("p01").innerHTML =  ampm1;
+		
+			document.getElementById("pid02").innerHTML =  hr2+":";
+		document.getElementById("pi02").innerHTML =  min2+":";
+		document.getElementById("p02").innerHTML =  ampm2;
+		
+				document.getElementById("pid03").innerHTML =  hr3+":";
+		document.getElementById("pi03").innerHTML =  min3+":";
+		document.getElementById("p03").innerHTML =  ampm3;
+
+				document.getElementById("pid04").innerHTML =  hr4+":";
+		document.getElementById("pi04").innerHTML =  min4+":";
+		document.getElementById("p04").innerHTML =  ampm4;
+				
+		
+		//document.getElementById("pid01").innerHTML = t1;
+		///////document.getElementById("pid02").innerHTML = t2;
+		//document.getElementById("pid03").innerHTML = t3;
+		//document.getElementById("pid04").innerHTML = t4;
+	}
+     }
+}
+
+</script>
+
+</body>
+</html>
