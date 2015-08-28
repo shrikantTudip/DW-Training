@@ -1,0 +1,22 @@
+{
+  "subarr": [
+    {
+      "firstname": "Omkar",
+      "lastname": "Nikam",
+      "rollno": 1,
+      "subject": "Maths"
+    },
+    {
+      "firstname": "Nilkesh",
+      "lastname": "Surana",
+      "rollno": 2,
+      "subject": "Maths"
+    },
+    {
+      "firstname": "Yogesh",
+      "lastname": "Wagh",
+      "rollno": 3,
+      "subject": "Maths"
+    }
+  ]
+}
