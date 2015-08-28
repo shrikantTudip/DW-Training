@@ -1,0 +1,22 @@
+{
+  "events": [
+    {
+      "FirstName": "nilkesh",
+      "LastName": "suresh",
+      "RollNo": 7,
+      "Subject": "Math"
+    },
+    {
+      "FirstName": "yogesh",
+      "LastName": "wagh",
+      "RollNo": 5,
+      "Subject": "Physics"
+    },
+    {
+      "FirstName": "Omkar",
+      "LastName": "nikam",
+      "RollNo": 211,
+	"Subject": "chemistry"
+    }
+  ]
+}
