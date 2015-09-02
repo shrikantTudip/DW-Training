@@ -1,5 +1,5 @@
-{
-  "events": [
+[
+   
     {
       "FirstName": "nilkesh",
       "LastName": "suresh",
@@ -18,5 +18,5 @@
       "RollNo": 211,
 	"Subject": "chemistry"
     }
-  ]
-}
+  
+]

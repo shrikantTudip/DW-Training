@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>JSON using JQuery</title>
+    <link rel="stylesheet" href="css/c08.css" />
+  </head>
+  <body>
+
+   <!-- <header><h1>student information</h1></header>  -->
+    <h2>Student table</h2>
+    <section id="content"></section>  
+    <table id="tmain" style="margin-left:20%; border:1px solid black; text-align:left; height:30%; width:50%"><center>
+   <thead><th>FirstName</th><th>LastName</th><th>RollNo</th><th>Subject</th><th>edit</th><th>remove</th></thead>
+    </table> 
+	<span class="button"  style="margin:30%">
+		<button id="add" style=" width: 10em;  height: 2em" ><center>ADD</button>
+		
+	</span>
+	<form id="fo" style="margin:0; display:none">
+	FirstName:<br>
+	<input type="text" id="FirstName" value=""></input>
+	LastName:<br>
+	<input type="text" id="LastName" value=""></input>
+	RollNo:<input type="text" id="RollNo" value=""></input>
+	Subject:<br>
+	<input type="text" id="Subject" value=""></input><br>
+	<input id="submit" type="button" style="color:green" value="Submit">
+	<input id="replace" type="button" style="color:yellow" value="replace">
+	</form>
+	
+     <script src="js/jquery-1.11.0.js"></script>
+     <script src="js/data-json-jquery.js"></script>
+
+
+  </body>
+</html>
