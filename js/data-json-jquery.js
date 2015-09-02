@@ -6,14 +6,11 @@ $(document).ready(function(){
 				'</td><td>'+field.RollNo+'</td><td>'+field.Subject+
 				'</td><td><button class="edit" >' + 'edit' +'</button></td><td><button class="rem">remove</td></tr>');
 		});
-
 	});
 
 	$("#add").on('click', function(){
 		$("#fo").css("display", "block");
-	});
-	
-	
+	});	
 
 	$("#submit").on('click', function(){
 		$("#tmain").append('<tr><td>'+ $('#FirstName').val() +'</td><td>'+ $("#LastName").val() +'</td><td>'+ $("#RollNo").val() +'</td><td>'+ $("#Subject").val() +
