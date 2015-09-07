@@ -1,0 +1,154 @@
+<?xml version="1.0"?>
+<form xmlns="http://www.demandware.com/xml/form/2008-04-19">
+    <field formid="fname" label="forms.contactus.firstname.label" type="string" mandatory="true" binding="custom.firstName" max-length="50"/>
+    <field formid="lname" label="forms.contactus.lastname.label" type="string" mandatory="true" binding="custom.lastName" max-length="50"/>
+    <field formid="gender" label="forms.contactus.gender.label" type="string" mandatory="true">
+    	<options>
+			<option optionid="" label="resource.select"	value=""/>
+			<option optionid="Male"	label="gender.male"	value="Male"/>
+			<option optionid="Female" label="gender.female" value="Female"/>
+		</options>
+    </field>
+    <field formid="birthday" label="profile.dob" type="date" mandatory="false" format="MM/dd/yyyy" max-length="10"/>
+    <field formid="website" label="forms.contactus.website.label" type="string" mandatory="false" max-length="35"/>
+    <field formid="email" label="forms.contactus.email.label" type="string" mandatory="true" 
+    	regexp="^[\w-\.]{1,}\@([\da-zA-Z-]{1,}\.){1,}[\da-zA-Z-]{2,6}$" 
+    	parse-error="forms.contactus.email.parse-error" 
+    	value-error="forms.contactus.email.value-error" 
+    	binding="custom.email" 
+    	max-length="50"/>  
+    <field formid="email_checkbox" label="forms.contactus.checkox.label" type="string" mandatory="false"></field>
+    
+	<field formid="comments" label="forms.contactus.comment.label" type="string" mandatory="false" />
+	
+	<field formid="address" label="forms.address1" type="string" mandatory="true" max-length="50"/>
+    <field formid="address1" label="forms.address2" type="string" mandatory="false" max-length="50"/>
+    <field formid="country" label="forms.country" type="string" mandatory="true">
+		<options>
+			<option optionid="" 	label="resource.select"	value=""/>
+			<option optionid="US" 	label="country.unitedstates"	value="US"/>
+			<option optionid="DE" 	label="country.germany"		value="DE"/>
+			<option optionid="CA" 	label="country.canada"		value="CA"/>
+		</options>	
+	</field>
+	<field formid="state" label="forms.state" type="string" mandatory="true">
+		<options>
+			<option optionid="" 	label="resource.select"	value=""/>
+			<option optionid="Alabama" 	label="state.us.alabama"	value="AL"/>
+			<option optionid="Arizona" 	label="state.us.arizona"	value="AR"/>
+			<option optionid="Alaska" 	label="state.us.alaska"		value="AA"/>
+		</options>	
+	</field>
+    <field formid="city" label="forms.city" type="string" mandatory="true" max-length="50"/>
+    <field formid="zipcode" label="forms.zippostalcode" type="number" mandatory="true" max-length="50"/>
+    <field formid="phone" label="forms.contactus.phone.label" type="number" description="forms.customeraddress.phone.description" mandatory="true" max-length="50"/>
+    
+    <field formid="cardname" label="creditcard.ownerlabel" type="string" mandatory="true" max-length="50"/>
+    <field formid="cardtype" label="creditcard.type" type="string" mandatory="true" max-length="50">
+    	<options>
+    		<option optionid=""  label="resource.select"  value=""/>
+    		<option optionid="Visa"  label="creditcard.visa"  value="visa"/>
+    		<option optionid="Master"  label="creditcard.mastercard"  value="master"/>
+    	</options>
+    </field>
+    <field formid="cardnumber" label="creditcard.number" type="number" description="creditcard.numberexample" mandatory="true" max-length="50"/>
+	<field formid="cardexpiration" label="creditcard.expiration.date" type="string" mandatory="true" max-length="50">
+    	<options>
+    		<option optionid=""  label="resource.select"  value=""/>
+    		<option optionid="january"  label="month.january"  value="jan"/>
+    		<option optionid="february"  label="month.february"  value="feb"/>
+    		<option optionid="march"  label="month.march"  value="mar"/>
+    		<option optionid="april"  label="month.april"  value="apr"/>
+    		<option optionid="may"  label="month.may"  value="may"/>
+    		<option optionid="june"  label="month.june"  value="jun"/>
+    		<option optionid="july"  label="month.july"  value="jul"/>
+    		<option optionid="august"  label="month.august"  value="aug"/>
+    		<option optionid="september"  label="month.september"  value="sep"/>
+    		<option optionid="october"  label="month.october"  value="oct"/>
+    		<option optionid="november"  label="month.november"  value="nov"/>
+    		<option optionid="december"  label="month.december"  value="dec"/>
+    	</options>
+    </field>
+	<field formid="cardexpiration1" label="" type="string" max-length="50">
+    	<options>
+    		<option optionid=""  label="resource.select"  value=""/>
+    		<option optionid="2015"  label="year.2015"  value="2015"/>
+    		<option optionid="2016"  label="year.2016"  value="2016"/>
+    		<option optionid="2017"  label="year.2017"  value="2017"/>
+    		<option optionid="2018"  label="year.2018"  value="2018"/>
+    		<option optionid="2019"  label="year.2019"  value="2019"/>
+    		<option optionid="2020"  label="year.2020"  value="2020"/>
+    	</options>
+    </field>
+    
+    <field formid="securitycode" label="creditcard.cvnlabel" type="integer" mandatory="true" max-length="5"/>
+    
+    <field formid="dob2" label="" type="string" max-length="50">
+    	<options>
+    		<option optionid=""  label="resource.select"  value=""/>
+    		<option optionid="january"  label="month.january"  value="jan"/>
+    		<option optionid="february"  label="month.february"  value="feb"/>
+    		<option optionid="march"  label="month.march"  value="mar"/>
+    		<option optionid="april"  label="month.april"  value="apr"/>
+    		<option optionid="may"  label="month.may"  value="may"/>
+    		<option optionid="june"  label="month.june"  value="jun"/>
+    		<option optionid="july"  label="month.july"  value="jul"/>
+    		<option optionid="august"  label="month.august"  value="aug"/>
+    		<option optionid="september"  label="month.september"  value="sep"/>
+    		<option optionid="october"  label="month.october"  value="oct"/>
+    		<option optionid="november"  label="month.november"  value="nov"/>
+    		<option optionid="december"  label="month.december"  value="dec"/>
+    	</options>
+    </field>
+	<field formid="dob1" label="profile.dob" type="string" max-length="50">
+    	<options>
+    		<option optionid=""  label="resource.select"  value=""/>
+    		<option optionid="2015"  label="year.2015"  value="2015"/>
+    		<option optionid="2016"  label="year.2016"  value="2016"/>
+    		<option optionid="2017"  label="year.2017"  value="2017"/>
+    		<option optionid="2018"  label="year.2018"  value="2018"/>
+    		<option optionid="2019"  label="year.2019"  value="2019"/>
+    		<option optionid="2020"  label="year.2020"  value="2020"/>
+    	</options>
+    </field>
+    <field formid="dob3" label="" type="string" max-length="50">
+    	<options>
+    		<option optionid=""  label="resource.select"  value=""/>
+    		<option optionid="1"  label="day.001"  value="1"/>
+    		<option optionid="2"  label="day.002"  value="2"/>
+    		<option optionid="3"  label="day.003"  value="3"/>
+    		<option optionid="4"  label="day.004"  value="4"/>
+    		<option optionid="5"  label="day.005"  value="5"/>
+    		<option optionid="6"  label="day.006"  value="6"/>
+    		<option optionid="7"  label="day.007"  value="7"/>
+    		<option optionid="8"  label="day.008"  value="8"/>
+    		<option optionid="9"  label="day.009"  value="9"/>
+    		<option optionid="10"  label="day.010"  value="10"/>
+    		<option optionid="11"  label="day.011"  value="11"/>
+    		<option optionid="12"  label="day.012"  value="12"/>
+    		<option optionid="13"  label="day.013"  value="13"/>
+    		<option optionid="14"  label="day.014"  value="14"/>
+    		<option optionid="15"  label="day.015"  value="15"/>
+    		<option optionid="16"  label="day.016"  value="16"/>
+    		<option optionid="17"  label="day.017"  value="17"/>
+    		<option optionid="18"  label="day.018"  value="18"/>
+    		<option optionid="19"  label="day.019"  value="19"/>
+    		<option optionid="20"  label="day.020"  value="20"/>
+    		<option optionid="21"  label="day.021"  value="21"/>
+    		<option optionid="22"  label="day.022"  value="22"/>
+    		<option optionid="23"  label="day.023"  value="23"/>
+    		<option optionid="24"  label="day.024"  value="24"/>
+    		<option optionid="25"  label="day.025"  value="25"/>
+    		<option optionid="26"  label="day.026"  value="26"/>
+    		<option optionid="27"  label="day.027"  value="27"/>
+    		<option optionid="28"  label="day.028"  value="28"/>
+    		<option optionid="29"  label="day.029"  value="29"/>
+    		<option optionid="30"  label="day.030"  value="30"/>
+    	</options>
+    </field>
+    
+    <field formid="termscondition" label="bml.terms" type="string"></field>
+    <field formid="lastfourdigit" label="bml.ssn" type="integer" max-length="4"></field>
+    
+	
+</form>
