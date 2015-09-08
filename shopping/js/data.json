@@ -1,0 +1,8 @@
+{
+	"imgdata":[
+			{"imgid":"img2","imgsource1":"images/ecru_1.jpg","imgsource2":"images/ecru_2.jpg","pname":"Ecru Ear Warmer","price":"$12.00", "one":"Handmade","two":"Wool-Cotton Blend","three":"One Size"},
+			{"imgid":"img4","imgsource1":"images/beanie_1.jpg","imgsource2":"images/beanie_2.jpg","pname":"Ecru Ear Warmer","price":"$12.00", "one":"Handmade","two":"Wool-Cotton Blend","three":"One Size"},
+			{"imgid":"img6","imgsource1":"images/bow_1.jpg","imgsource2":"images/bow_2.jpg","pname":"Ecru Ear Warmer","price":"$12.00", "one":"Handmade","two":"Wool-Cotton Blend","three":"One Size"},
+			{"imgid":"img8","imgsource1":"images/hand_1.jpg","imgsource2":"images/hand_2.jpg","pname":"Ecru Ear Warmer","price":"$12.00", "one":"Handmade","two":"Wool-Cotton Blend","three":"One Size"}
+	]
+}
