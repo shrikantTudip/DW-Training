@@ -1,0 +1,11 @@
+{
+	"imgdata":[
+			{"imgid":"img2","imgsource":"1.jpg","imgname":"good wear","price":"500rs"},
+			{"imgid":"img4","imgsource":"3.jpg","imgname":"fancy wear","price":"700rs"},
+			{"imgid":"img6","imgsource":"5.jpg","imgname":"sexy wear","price":"750rs"},
+			{"imgid":"img8","imgsource":"7.jpg","imgname":"hot wear","price":"1000rs"}
+	]
+
+	
+
+}
